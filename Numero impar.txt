@@ -1,0 +1,47 @@
+// window.onload = iniciar ;
+// function iniciar (){
+//     var container = document.getElementById("boton");
+//      container.addEventListener("click" , continuar);
+
+// }
+// function continuar(){
+//     var numero = prompt("Escribe un numero")
+//     var valor = numero.value
+//     final(valor)
+// }
+// function final (valor){
+//     var pregunta = document.getElementById("contenedor");
+//     pregunta = valor
+// }
+
+
+
+
+//DEFINIR VARIABLES , ALMACENAR LOS OBJETOS EN UNA VARIABLE//
+const carro = document.getElementById("carro");
+const boton = document.getElementById("boton");
+const llegada =document.getElementById("llegada")
+
+//DEFINIR LAS ACCIONES DEL OBJETO//
+const agrandar = function grande(){
+    carro.style.width="500px"
+    
+}
+const achicar = function chico() {
+    carro.style.width="50px"
+    
+}
+ const avanzar = function avanza(){
+    carro.style.left="800px"
+    carro.style.transition = "left 4s"
+     }
+ const retroceder = function retro(){
+    carro.style.left="0px"
+    carro.style.transition = "left 4s"
+    
+}
+
+//AGREGAR LOS EVENTOS//
+boton.addEventListener ("mousedown", avanzar)
+boton.addEventListener("mouseup" , retroceder)
+  
